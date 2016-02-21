@@ -1,6 +1,6 @@
 {
     "name": "gitbook-plugin-kakuyomu-formatter",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "GitBook plugin for formatting text for kakuyomu.jp",
     "author": "IRIDE Monad <iride.monad@gmail.com>",
     "license": "MIT",
