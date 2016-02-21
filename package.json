@@ -1,0 +1,25 @@
+{
+    "name": "gitbook-plugin-kakuyomu-formatter",
+    "version": "0.0.1",
+    "description": "GitBook plugin for formatting text for kakuyomu.jp",
+    "author": "IRIDE Monad <iride.monad@gmail.com>",
+    "license": "MIT",
+    "main": "index.js",
+    "engines": {
+        "gitbook": "*"
+    },
+    "gitbook": {
+        "properties": {
+            "paragraph": {
+                "type": "boolean",
+                "default": true,
+                "title": "Whether to perform paragraph conversion"
+            },
+            "ruby": {
+                "type": "boolean",
+                "default": true,
+                "title": "Whether to perform ruby and dots-emphasis conversion"
+            }
+        }
+    }
+}
