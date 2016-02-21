@@ -4,7 +4,13 @@
     "description": "GitBook plugin for formatting text for kakuyomu.jp",
     "author": "IRIDE Monad <iride.monad@gmail.com>",
     "license": "MIT",
+    "homepage": "https://github.com/io-monad/gitbook-plugin-kakuyomu-formatter",
+    "bugs": "https://github.com/io-monad/gitbook-plugin-kakuyomu-formatter/issues",
     "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/io-monad/gitbook-plugin-kakuyomu-formatter.git"
+    },
     "engines": {
         "gitbook": "*"
     },
