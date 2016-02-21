@@ -18,10 +18,10 @@ var ESCAPE_REPLACE = "《";
 module.exports = {
     hooks: {
         "page:before": function (page) {
-            if (this.book.config.get(CONFIG_KEY + "paragraph", true)) {
+            if (this.config.get(CONFIG_KEY + "paragraph", true)) {
                 page.content = page.content.replace(PARA_REGEXP, PARA_REPLACE);
             }
-            if (this.book.config.get(CONFIG_KEY + "ruby", true)) {
+            if (this.config.get(CONFIG_KEY + "ruby", true)) {
                 page.content = page.content
                     .replace(DOTS_REGEXP, DOTS_REPLACE)
                     .replace(RUBY_REGEXP, RUBY_REPLACE)
