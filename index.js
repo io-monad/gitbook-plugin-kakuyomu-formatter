@@ -16,6 +16,15 @@ var ESCAPE_REGEXP = /[|｜]《/g;
 var ESCAPE_REPLACE = "《";
 
 module.exports = {
+    website: {
+        assets: "./assets",
+        css: ["website.css"]
+    },
+    ebook: {
+        assets: "./assets",
+        css: ["ebook.css"]
+    },
+
     hooks: {
         "page:before": function (page) {
             if (this.config.get(CONFIG_KEY + "paragraph", true)) {
