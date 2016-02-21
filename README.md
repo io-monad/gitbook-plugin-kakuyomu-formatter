@@ -9,7 +9,7 @@ Since emphasis by dots is not supported by major browsers, it uses Markdown-styl
 ```json
 {
     "pluginsConfig": {
-        "kakuyomu-formatter": {
+        "kakuyomuFormatter": {
             "paragraph": true,
             "ruby": true
         }

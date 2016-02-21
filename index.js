@@ -1,3 +1,5 @@
+var CONFIG_KEY = "options.pluginsConfig.kakuyomuFormatter.";
+
 var PARA_REGEXP = /([^\n])\n(?!\n)/g;
 var PARA_REPLACE = "$1\n\n";
 
@@ -16,13 +18,10 @@ var ESCAPE_REPLACE = "《";
 module.exports = {
     hooks: {
         "page:before": function (page) {
-            paragraph = this.book.config.get("paragraph", true);
-            ruby = this.book.config.get("ruby", true);
-
-            if (paragraph) {
+            if (this.book.config.get(CONFIG_KEY + "paragraph", true)) {
                 page.content = page.content.replace(PARA_REGEXP, PARA_REPLACE);
             }
-            if (ruby) {
+            if (this.book.config.get(CONFIG_KEY + "ruby", true)) {
                 page.content = page.content
                     .replace(DOTS_REGEXP, DOTS_REPLACE)
                     .replace(RUBY_REGEXP, RUBY_REPLACE)
